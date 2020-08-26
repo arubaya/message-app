@@ -1,0 +1,36 @@
+.appbodyChat {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid #424242;
+    height: 35px;
+    color: #bdbdbd;
+}
+
+a {
+    text-decoration: none !important;
+    color: #bdbdbd;
+}
+
+.appbodyChat:hover {
+    background-color: #424242;
+}
+
+.appbodyChat_info {
+    margin-left: 15px;
+    overflow: hidden;
+}
+
+.appbodyChat_info > h2 {
+    font-size: 17px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.appbodyChat_info > p {
+    width: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
