@@ -88,7 +88,7 @@ const AppBody = () => {
     
     const [user, setUser] = useState([]);
     useEffect(() => {
-      db.collection("member").doc(`${cookie.uid}`).onSnapshot((snapshot) => {
+      db.collection("member").doc(`${cookie}`).onSnapshot((snapshot) => {
         setUser({
           name: `${snapshot.data().name}`,
           photo: `${snapshot.data().photo}`,

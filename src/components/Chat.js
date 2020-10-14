@@ -38,7 +38,7 @@ function Chat() {
 
     const [user, setUser] = useState([]);
     useEffect(() => {
-      db.collection("member").doc(`${cookie.uid}`).onSnapshot((snapshot) => {
+      db.collection("member").doc(`${cookie}`).onSnapshot((snapshot) => {
         setUser({
           name: `${snapshot.data().name}`,
           photo: `${snapshot.data().photo}`,
@@ -71,7 +71,7 @@ function Chat() {
 
     const sendMessage = (e) => {
         e.preventDefault();
-        console.log(`you typed >> ${input}`);
+        // console.log(`you typed >> ${input}`);
 
         db.collection('rooms')
             .doc(roomId)
